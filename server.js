@@ -13,7 +13,7 @@ const profile = require('./controllers/profile');
 const db = knex({
     client:'pg',
     connection:{
-        connectionString:'postgresql-aerodynamic-21910',
+        connectionString:process.env.DATABASE_URL,
         ssl:true
     }
 })
