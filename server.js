@@ -30,7 +30,7 @@ app.use(bodyParser.json());
 // app.use(bodyParser.urlencoded({extended:false}));
 
 // '/' --> It's work
-app.get('/',(req,res)=>{ res.send(`it's working`);})
+app.get('/',(req,res)=>{ res.send(`it's working`)})
 
 // '/signin' --> POST = sucess/fail
 app.post('/signin',(req,res) => {signin.handleSignin(req,res,db,bcrypt)});
