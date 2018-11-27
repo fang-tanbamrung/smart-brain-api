@@ -13,10 +13,8 @@ const profile = require('./controllers/profile');
 const db = knex({
     client:'pg',
     connection:{
-        host:'127.0.0.1',
-        user:'postgres',
-        password:'password',
-        database:'smart-brain'
+        connectionString:'postgresql-aerodynamic-21910',
+        ssl:true
     }
 })
 
