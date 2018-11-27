@@ -48,6 +48,6 @@ app.put('/image',(req,res) => {image.handleImage(req,res,db)});
 app.post('/imageUrl',(req,res) => {image.handleImageUrl(req,res)});
 
 
-app.listen(3001,()=>{
-    console.log('Port 3001 is using by smart-brain-api');
+app.listen(process.env.PORT || 3000,()=>{
+    console.log(`Port ${process.env.PORT} is using by smart-brain-api`);
 })
