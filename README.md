@@ -1,2 +1,2 @@
 # smart-brain-api
-backend of faceRegWeb from Udemy course
+backend of faceDetectWeb from Udemy course
